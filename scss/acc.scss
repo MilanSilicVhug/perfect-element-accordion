@@ -1,0 +1,95 @@
+*{box-sizing:border-box; margin: 0; padding: 0;}
+main{min-height:110vh; background:teal; padding-top:3rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    section {
+        width: 50%;
+        margin: 2rem auto;
+        h2 {
+            margin: 1rem 0;
+            span {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2rem;
+                font-weight: 100;
+            }    
+        }
+    }
+}
+
+
+dl {
+    
+    dt { background-color: rgba($color: lightgreen, $alpha: .8);
+        display: flex;
+        padding: 1rem 1.6rem;
+        transition: 0.4s;
+        cursor: pointer;
+
+        font-size: 1.1rem;
+    }
+
+    .active { background-color: rgba($color: lightgreen, $alpha: 1.0);
+
+    }
+
+    dd { background-color: rgba($color: lightgreen, $alpha: 1.0);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        
+        p {
+            padding: .7rem 1.6rem 1.4rem;
+        }
+    }
+
+
+    .dt1 {
+        &::after {
+            content: url(../icons/arrow.svg);
+            display: block;
+            width: 1rem;
+            height: auto;
+            transition: rotate .18s ease-out;
+            margin-left: auto;
+        }
+    }
+    .dt1.active {
+        &::after {rotate: 180deg;}
+    }
+
+
+    .dt2 {
+        &::after {
+            content: url(../icons/pl.svg);
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            transition: rotate .26s ease-out;
+            margin-left: auto;
+        }
+    }
+    .dt2.active {
+        &::after {rotate: -225deg;}
+    }
+
+
+    .dt3 .plus {
+        position: relative;
+        margin-left: auto;
+        &:before, &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 1rem;
+            height: 3px;
+            background: #000;
+            translate: -100% -50%;
+            transition: rotate .2s ease-out;
+        }
+        &:after {rotate: -90deg;}
+        &:before {rotate: 0deg;}
+    }
+    .dt3.active .plus {
+        &:after {rotate: -180deg;}
+        &:before {rotate: -180deg;}
+    }
+}
