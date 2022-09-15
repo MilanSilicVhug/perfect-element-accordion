@@ -26,7 +26,7 @@ dl {
         font-size: 1.1rem;
     }
 
-    .active { background-color: rgba($color: lightgreen, $alpha: 1.0);
+    .show { background-color: rgba($color: lightgreen, $alpha: 1.0);
 
     }
 
@@ -51,7 +51,7 @@ dl {
             margin-left: auto;
         }
     }
-    .dt1.active {
+    .dt1.show {
         &::after {rotate: 180deg;}
     }
 
@@ -66,7 +66,7 @@ dl {
             margin-left: auto;
         }
     }
-    .dt2.active {
+    .dt2.show {
         &::after {rotate: -225deg;}
     }
 
@@ -88,7 +88,7 @@ dl {
         &:after {rotate: -90deg;}
         &:before {rotate: 0deg;}
     }
-    .dt3.active .plus {
+    .dt3.show .plus {
         &:after {rotate: -180deg;}
         &:before {rotate: -180deg;}
     }
