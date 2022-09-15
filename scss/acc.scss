@@ -15,26 +15,21 @@ main{min-height:200vh; background:teal; padding-top:3rem; font-family:'Gill Sans
 }
 
 
-dl {
-    
-    dt { background-color: rgba($color: lightgreen, $alpha: .8);
+dl {margin-bottom: 3rem;
+
+    dt { background-color: rgba($color: lightgreen, $alpha: .8); font-size: 1.1rem;
         display: flex;
         padding: 1rem 1.6rem;
         transition: 0.4s;
         cursor: pointer;
-
-        font-size: 1.1rem;
     }
-
     .show { background-color: rgba($color: lightgreen, $alpha: 1.0);
 
     }
-
     dd { background-color: rgba($color: lightgreen, $alpha: 1.0);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
-        
         p {
             padding: .7rem 1.6rem 1.4rem;
         }
