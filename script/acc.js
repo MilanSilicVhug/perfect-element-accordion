@@ -1,4 +1,4 @@
-// opt1 - every acc cell can be opened
+// opt1
 const dts1 = [...document.getElementsByClassName('dt1')];
 const dds1 = [...document.getElementsByClassName('dd1')];
 dts1.forEach((dt,i) => {
@@ -11,7 +11,7 @@ dts1.forEach((dt,i) => {
 addEventListener('resize',()=>{dts1.forEach((dt,i)=>{if(dt.classList.contains("show")) dds1[i].style.maxHeight = dds1[i].scrollHeight + "px";})})
 
 
-// opt2 - only one acc cell can be opened, can't close opened
+// opt2
 const dts2 = [...document.getElementsByClassName('dt2')];
 const dds2 = [...document.getElementsByClassName('dd2')];
 dts2.forEach((dt,i) => {
@@ -25,7 +25,7 @@ dts2.forEach((dt,i) => {
 addEventListener('resize',()=>{dts2.forEach((dt,i)=>{if(dt.classList.contains("show")) dds2[i].style.maxHeight = dds2[i].scrollHeight + "px";})})
 
 
-// opt3 - only one acc cell can be opened, can close opened
+// opt3
 const dts3 = [...document.getElementsByClassName('dt3')];
 const dds3 = [...document.getElementsByClassName('dd3')];
 dts3.forEach((dt,i) => {
