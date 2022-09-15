@@ -6,7 +6,7 @@
 }
 
 main {
-  min-height: 110vh;
+  min-height: 200vh;
   background: teal;
   padding-top: 3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -39,7 +39,7 @@ dl dt {
   font-size: 1.1rem;
 }
 
-dl .active {
+dl .show {
   background-color: lightgreen;
 }
 
@@ -65,7 +65,7 @@ dl .dt1::after {
   margin-left: auto;
 }
 
-dl .dt1.active::after {
+dl .dt1.show::after {
   rotate: 180deg;
 }
 
@@ -79,7 +79,7 @@ dl .dt2::after {
   margin-left: auto;
 }
 
-dl .dt2.active::after {
+dl .dt2.show::after {
   rotate: -225deg;
 }
 
@@ -109,10 +109,10 @@ dl .dt3 .plus:before {
   rotate: 0deg;
 }
 
-dl .dt3.active .plus:after {
+dl .dt3.show .plus:after {
   rotate: -180deg;
 }
 
-dl .dt3.active .plus:before {
+dl .dt3.show .plus:before {
   rotate: -180deg;
 }
